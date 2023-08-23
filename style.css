@@ -1,0 +1,773 @@
+@font-face{
+    font-family: "Calibri 400";
+    src: url(font/calibri.ttf);
+    font-weight: 400;
+}
+
+.maketforfigma{
+    flex: 0 0 auto;
+    background: #313a46;
+    font-weight: bold;
+    display: flex;
+}
+
+.maketforfigma img{
+    border-radius: 10px;
+    margin: 4px 0 0 4px;
+}
+
+.maketforfigma p {
+    color: #98a6ad;
+    text-decoration: none;
+    letter-spacing: .01875rem;
+    font-size: .775rem;
+    padding: 0 10px;
+    line-height: 0.70rem;
+}
+
+.maketforfigma p > a {
+    color: #bbe4f0;
+    font-weight: bold;
+}
+
+.maketforfigma p > a:hover {
+    color: #ffffff
+}
+
+.main{
+    flex: 1 0 auto;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Верстка */
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.container * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+/* Header */
+
+.main{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E2E2E2;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 35px 0;
+}
+
+.header-logo{
+    font-size: 28px;
+    font-weight: 700;
+    color: #FF7629;
+}
+
+.headerNav{
+    display: flex;
+    align-items: center;
+}
+
+.headerNav-li{
+    margin-left: 40px;
+}
+
+.headerNav-li-a{
+    font-size: 20px;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+
+/* Main */
+
+.Main{
+    background-image: url(image/main-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Main-content{
+    padding: 145px 0;
+    text-align: center;
+}
+
+.Main-title{
+    font-size: 96px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.Main-title > span{
+    color: #FF7629;
+}
+
+.Main-text{
+    max-width: 910px;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: "Calibri 400";
+    margin: 65px auto 0 auto;
+}
+
+.Main-button{
+    display: block;
+    margin: 65px auto 0 auto;
+    width: 300px;
+    padding: 15px 0;
+    background-color: #FF7629;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 60px;
+}
+
+/* Creating Moments */
+
+.creatingMoments{
+    margin-top: 175px;
+}
+
+.creatingMoments-content{
+    display: grid;
+    grid-template-columns: 675px 480px;
+    gap: 70px;
+}
+
+.creatingMoments-contentItems:first-child{
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    grid-template-rows: repeat(2, 365px);
+    gap: 35px;
+}
+
+.creatingMoments-contentItems:first-child > img:first-child{
+    width: 320px;
+    height: 765px;
+    grid-column: 1 / 2;
+    grid-rows: 1 / 3;
+}
+
+.creatingMoments-contentItems:first-child > img:nth-child(2){
+    width: 320px;
+    height: 365px;
+    grid-column: 2 / 3;
+    grid-rows: 1 / 2;
+}
+
+.creatingMoments-contentItems:first-child > img:last-child{
+    width: 320px;
+    height: 365px;
+    grid-column: 2 / 3;
+    grid-rows: 1 / 2;
+}
+
+.creatingMoments-contentItems:last-child{
+    max-width: 480px;
+}
+
+.creatingMoments-contentItems-title{
+    margin-top: 45px;
+    font-size: 72px;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+
+.creatingMoments-contentItems-title > span{
+    color: #FF7629;
+}
+
+.creatingMoments-contentItems-text{
+    margin-top: 65px;
+    font-size: 20px;
+    color: #1E1E1E;
+    font-family: "Calibri 400";
+}
+
+.creatingMoments-contentItems-button{
+    display: block;
+    margin-top: 65px;
+    width: 260px;
+    background-color: #FF7629;
+    border-radius: 60px;
+    padding: 15px 0;
+}
+
+.creatingMoments-contentItems-button > span{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.creatingMoments-contentItems-button > span > img{
+    width: 20px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+/* Product by Category */
+
+.productByCategory{
+    margin-top: 175px;
+}
+
+.productByCategory-title{
+    font-size: 72px;
+    color: #1E1E1E;;
+    font-weight: 600;
+    text-align: center;
+}
+
+.productByCategory-title > span{
+    color: #FF7629;
+}
+
+.productByCategory-content{
+    margin-top: 115px;
+    display: grid;
+    grid-template-columns: repeat(3, 395px);
+    padding: 0;
+    gap: 35px;
+}
+
+.productByCategory-contentItems{
+    height: 260px;
+    background-image: url(image/productByCategory-image.png);
+}
+
+.productByCategory-contentItems > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.71);
+    border-radius: 15px;
+}
+
+.productByCategory-contentItems-title{
+    font-size: 36px;
+    max-width: 190px;
+    text-align: center;
+    color: #FF7629;
+    font-weight: 600;
+}
+
+.productByCategory-button{
+    display: block;
+    width: 260px;
+    padding: 15px;
+    background-color: #FF7629;
+    border-radius: 60px;
+    margin: 80px auto 0 auto;
+}
+
+.productByCategory-button > span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+.productByCategory-button > span > img{
+    margin-left: 10px;
+    width: 20px;
+    height: 15px;
+}
+
+/* Discover Our Facilities */
+
+.discoverOurFacilities{
+    margin-top: 175px;
+}
+
+.discoverOurFacilities-title{
+    font-size: 72px;
+    text-align: center;
+    color: #1E1E1E;
+    font-weight: 600;
+}
+
+.discoverOurFacilities-title > span{
+    color: #FF7629;
+}
+
+.discoverOurFacilities-content{
+    margin-top: 115px;
+    display: grid;
+    grid-template-columns: repeat(4, 265px);
+    gap: 70px;
+}
+
+.discoverOurFacilities-contentItems{
+    text-align: center;
+}
+
+.discoverOurFacilities-contentItems{
+    text-align: center;
+}
+
+.discoverOurFacilities-contentItems > span{
+    width: 85px;
+    height: 85px;
+}
+
+.discoverOurFacilities-contentItems-title{
+    color: #1E1E1E;
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 190px;
+    margin: 45px auto 0 auto;
+}
+
+.discoverOurFacilities-contentItems-text{
+    color: #1E1E1E;
+    font-size: 20px;
+    font-family: "Calibri 400";
+    max-width: 265px;
+    margin: 35px auto 0 auto;
+}
+
+.discoverOurFacilities-button{
+    display: block;
+    width: 260px;
+    padding: 15px;
+    background-color: #FF7629;
+    border-radius: 60px;
+    margin: 90px auto 0 auto;
+}
+
+.discoverOurFacilities-button > span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.discoverOurFacilities-button > span > img{
+    margin-left: 10px;
+    width: 20px;
+    height: 15px;
+}
+
+/* Package Hotel Celestial Inn */
+
+.packageHotelCelestialInn{
+    margin-top: 175px;
+}
+
+.packageHotelCelestialInn-title{
+    color: #1E1E1E;
+    font-size: 72px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.packageHotelCelestialInn-title > span{
+    color: #FF7629;
+}
+
+.packageHotelCelestialInn-content{
+    margin-top: 115px;
+    display: grid;
+    grid-template-columns: 370px 400px 370px;
+    gap: 55px;
+}
+
+.packageHotelCelestialInn-contentItems:first-child{
+    margin: 40px 0 45px 0;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 85px 75px;
+}
+
+.packageHotelCelestialInn-contentItems:nth-child(2){
+    background-color: #FF7629;;
+    border-radius: 15px;
+    padding: 125px 85px;
+}
+
+.packageHotelCelestialInn-contentItems:nth-child(2) *{
+    color: #fff;
+}
+
+.packageHotelCelestialInn-contentItems:last-child{
+    margin: 40px 0 45px 0;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 85px 75px;
+}
+
+.packageHotelCelestialInn-contentItems-type{
+    color: #1E1E1E;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.packageHotelCelestialInn-contentItems-price{
+    color: #FF7629;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.packageHotelCelestialInn-contentItems-purpose{
+    color: rgba(161, 161, 161, 0.90);
+    font-size: 24px;
+    font-family: "Calibri 400";
+    margin-top: 10px;
+}
+
+.packageHotelCelestialInn-contentInfo{
+    margin-top: 80px;
+}
+
+.packageHotelCelestialInn-contentInfo-items:first-child{
+    margin-top: 0;
+}
+.packageHotelCelestialInn-contentInfo-items{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.packageHotelCelestialInn-contentInfo-items > span{
+    font-size: 20px;
+    font-family: "Calibri 400";
+    margin-left: 20px;
+    color: #1E1E1E;
+}
+
+.packageHotelCelestialInn-contentItems:first-child > .packageHotelCelestialInn-contentInfo > .packageHotelCelestialInn-contentInfo-items:nth-child(6) > span{
+    color: rgba(161, 161, 161, 0.90);
+}
+
+.packageHotelCelestialInn-contentItems:first-child > .packageHotelCelestialInn-contentInfo > .packageHotelCelestialInn-contentInfo-items:nth-child(7) > span{
+    color: rgba(161, 161, 161, 0.90);
+}
+
+.packageHotelCelestialInn-contentItems:first-child > .packageHotelCelestialInn-contentInfo > .packageHotelCelestialInn-contentInfo-items:nth-child(8) > span{
+    color: rgba(161, 161, 161, 0.90);
+}
+
+.packageHotelCelestialInn-contentItems:last-child > .packageHotelCelestialInn-contentInfo > .packageHotelCelestialInn-contentInfo-items:last-child > span{
+    color: rgba(161, 161, 161, 0.90);
+}
+
+/* Guests love us*/
+
+.guestsLoveUs{
+    margin-top: 270px;
+}
+
+.guestsLoveUs-title{
+    text-align: center;
+    font-size: 72px;
+    color: #1E1E1E;
+    font-weight: 600;
+    max-width: 1180px;
+    margin: auto;
+}
+
+.guestsLoveUs-title > span{
+    color: #FF7629;
+}
+
+.guestsLoveUs-content{
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    margin: 140px auto 0 auto;
+    justify-content: space-between;
+}
+
+.guestsLoveUs-items:first-child > a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(image/button-arrow.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.guestsLoveUs-items:nth-child(2) > img{
+    width: 285px;
+    height: 340px;
+}
+
+.guestsLoveUs-items:last-child > a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(image/button-arrow.svg);
+    transform: rotate(180deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.guestsLoveUs-detitle{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    color: #FF7629;
+    margin-top: 115px;
+}
+
+.guestsLoveUs-detitleText{
+    font-size: 24px;
+    font-weight: 600;
+    color: #1E1E1E;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.guestsLoveUs-text{
+    font-size: 20px;
+    font-family: "Calibri 400";
+    color: #1E1E1E;
+    margin: 45px auto 0 auto;
+    text-align: center;    
+    max-width: 635px;
+}
+
+/*  Recent Post */
+
+.recentPost{
+    margin-top: 175px;
+}
+
+.recentPost-title{
+    font-size: 72px;
+    font-weight: 600;
+    color: #1E1E1E;
+    text-align: center;
+}
+
+.recentPost-title > span{
+    color: #FF7629;
+}
+
+.recentPost-content{
+    margin-top: 115px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 105px;
+}
+
+.recentPost-contentItems > img{
+    width: 100%;
+    height: 425px;
+}
+
+.recentPost-contentItems-date{
+    margin: 60px 0 0 5px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #1E1E1E;
+}
+
+.recentPost-contentItems-title{
+    margin: 25px 0 0 5px;
+    color: #FF7629;
+    font-size: 36px;
+    font-weight: 600;
+    max-width: 335px;
+}
+
+.recentPost-contentItems-text{
+    margin: 25px 0 0 5px;
+    color: #1E1E1E;
+    font-size: 20px;
+    font-family: "Calibri 400";
+    max-width: 330px;
+}
+
+/* Feedback*/
+
+.feedback{
+    margin-top: 175px;
+    padding: 170px 0;
+    background-image: url(image/feedback-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.feedback-title{
+    color: #FFFFFF;
+    font-size: 72px;
+    font-weight: 600;
+    max-width: 1030px;
+    text-align: center;
+    margin: auto;
+}
+
+.feedback-title > span{
+    color: #FF7629;
+}
+
+.feedback-inputs{
+    width: 900px;
+    margin: 115px auto 0 auto;
+    background-color: #fff;
+    padding: 0 0 0 40px;
+    border-radius: 310px;
+    display: flex;
+}
+
+.feedback-input{
+    width: 520px;
+    color: #363636;
+    font-size: 20px;
+    font-family: "Calibri 400";
+}
+
+.feedback-subscribe{
+    display: block;
+    width: 210px;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 310px;
+    background-color: #FF7629;
+    padding: 30px 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Footer */
+
+.footer{
+    background-color: #FF7629;
+    padding: 165px 0 160px 0;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+}
+
+.footer-contentItems{
+    margin-right: 185px;
+}
+
+.footer-contentItems:last-child{
+    margin-right: 0;
+}
+
+.footer-contentItems-title{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.footer-contentItems-text{
+    margin-top: 30px;
+    max-width: 350px;
+    font-size: 20px;
+    font-family: "Calibri 400";
+}
+
+.footer-contentItemsSocial{
+    margin-top: 30px;
+    display: flex;
+}
+
+.footer-contentItemsSocial-items{
+    margin-right: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    cursor: pointer;
+}
+
+.footer-contentItemsSocial-items:first-child{
+    background-image: url(image/socialIcon1.svg);
+}
+
+.footer-contentItemsSocial-items:nth-child(2){
+    background-image: url(image/socialIcon2.svg);
+}
+
+.footer-contentItemsSocial-items:nth-child(3){
+    background-image: url(image/socialIcon3.svg);
+}
+
+.footer-contentItemsSocial-items:last-child{
+    background-image: url(image/socialIcon4.svg);
+}
+
+.footer-contentItemsInfos{
+    margin-top: 25px;
+}
+
+.footer-contentItemsInfos-items{
+    margin-bottom: 36px;
+}
+
+.footer-contentItemsInfos-items > a{
+    color: #fff;
+    font-size: 24px;
+    font-family: "Calibri 400";
+}
+
+.footer-contentItemsInfos-items:last-child{
+    margin-bottom: 0;
+}
+
+.footer-contentItemsContacts{
+    margin-top: 30px;
+}
+
+.footer-contentItemsContacts-items{
+    display: flex;
+    align-items: center;
+}
+
+.footer-contentItemsContacts-items:first-child{
+    margin-bottom: 40px;
+}
+
+.footer-contentItemsInfos-items:last-child > img{
+    width: 18px;
+    height: 18px;
+}
+
+.footer-contentItemsContacts-items:first-child > img{
+    width: 20px;
+    height: 16px;
+}
+
+.footer-contentItemsContacts-items > a{
+    margin-left: 15px;
+    color: #FFF;
+    font-size: 24px;
+    font-family: "Calibri 400";
+}
